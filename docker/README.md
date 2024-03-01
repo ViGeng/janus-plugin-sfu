@@ -91,7 +91,8 @@ docker build --pull --no-cache -t janus:latest .
 start the container:
 
 ```
-docker run -d --restart always --net=host --name="janus" -e MAX_ROOM_SIZE=15 -e ADMIN_SECRET=YourOwnPassword janus:latest
+docker run -d --restart always --net=host --name="janusv0" -e MAX_ROOM_SIZE=3 -e ADMIN_SECRET=YourOwnPassword wgeng/janus:v0
+docker run -d --net=host --name="janusv0" -e MAX_ROOM_SIZE=3 -e ADMIN_SECRET=YourOwnPassword wgeng/janus:v0
 ```
 
 If you secure the rooms with JWT, specify the public key like this:
