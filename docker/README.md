@@ -55,6 +55,7 @@ rebuild like it was the first time:
 
 ```
 docker build --pull --no-cache -t janus:latest .
+docker build --pull -t wgeng/janus:v2 .
 ```
 
 start the container:
